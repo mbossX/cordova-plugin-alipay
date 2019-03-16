@@ -12,7 +12,7 @@
     <issue>https://github.com/jing-zhou/cordova-plugin-alipay/issues</issue>
     
     <js-module name="Alipay" src="www/alipay.js">
-      <clobbers target="alipay"/>
+      <clobbers target="Alipay"/>
     </js-module>
 
     <preference name="APP_ID"/>
@@ -21,7 +21,7 @@
 
       <config-file target="res/xml/config.xml" parent="/*">
           <feature name="Alipay">
-              <param name="android-package" value="org.apache.cordova.Alipay"/>
+              <param name="android-package" value="Alipay"/>
               <param name="onload" value="true" />
           </feature>
       </config-file>
@@ -54,7 +54,7 @@
     
         <config-file parent="/*" target="config.xml">
             <feature name="Alipay">
-                <param name="ios-package" value="org.apache.cordova.Alipay"/>
+                <param name="ios-package" value="Alipay"/>
             </feature>
             <string name="alipayid">$APP_ID</string>
         </config-file>
